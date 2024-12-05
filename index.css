@@ -1,0 +1,147 @@
+
+  body {
+    background: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSBsVu5qeT38oV9_qQZdoetwrauvuAvxDebMQ&s")
+      no-repeat center center fixed;
+    background-size: cover;
+    font-family: "Poppins", sans-serif;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    color: #fff;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: rgba(0, 255, 255, 0.6);
+    padding: 10px;
+    border-radius: 10px;
+  }
+  
+  .container {
+    max-width: 800px;
+    text-align: center;
+    padding: 20px;
+    border-radius: 15px;
+    background-color: rgba(0, 0, 0, 0.8);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.5);
+  }
+  
+  #name-form {
+    margin-bottom: 20px;
+  }
+  
+  #name-form label {
+    display: block;
+    color: #fff;
+    font-size: 1.2rem;
+    margin-top: 10px;
+  }
+  
+  #name-form input,
+  #name-form select {
+    width: 100%;
+    padding: 10px;
+    font-size: 1rem;
+    margin-top: 5px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+  }
+  
+  #start-button {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    font-size: 1.2rem;
+    background-color: purple;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  #start-button:hover {
+    background-color: #4b0082;
+    transform: scale(1.05);
+  }
+  
+  #game-container {
+    display: none;
+    margin-top: 20px;
+  }
+  
+  #game-board {
+    display: grid;
+    gap: 10px;
+    justify-content: center;
+  }
+  
+  .card {
+    background-color: wheat;
+    border-radius: 10px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: black;
+    cursor: pointer;
+    transition: transform 0.3s, background-color 0.5s;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+     width: 150px; /* Increase the width */
+     border: 2px solid #ccc;
+        border-radius: 8px;
+     
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .card.matched {
+    background-color: #28a745;
+    color: white;
+    transform: scale(1.1);
+  }
+  
+  #game-info {
+    margin-top: 20px;
+    text-align: center;
+    color: #fff;
+  }
+  
+  #game-info p {
+    font-size: 1.2rem;
+    margin: 5px 0;
+  }
+  
+  #reset-button {
+    padding: 10px 20px;
+    font-size: 1rem;
+    background-color: #dc3545;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s, transform 0.3s;
+  }
+  
+  #reset-button:hover {
+    background-color: green;
+    transform: scale(1.05);
+  }
+  
+  @media (max-width: 768px) {
+    #game-board {
+      grid-template-columns: repeat(2, 1fr);
+    }
+    .card {
+      height: 80px;
+      font-size: 1.5rem;
+    }
+  }
+  
